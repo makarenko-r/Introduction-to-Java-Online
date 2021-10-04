@@ -1,9 +1,7 @@
-import java.sql.Array;
-
 public class Part1_Task1 {
     public static void main(String[] args) {
-        int n;          // количество элементов массива
-        int[] array;    // исходный массив
+        int n;                  // количество элементов массива
+        int[] array;            // исходный массив
         int k;
         int sum;
 
