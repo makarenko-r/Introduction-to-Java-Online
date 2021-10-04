@@ -1,21 +1,20 @@
-import java.sql.Array;
 import java.util.Arrays;
 
 public class Part1_Task4 {
     public static void main(String[] args) {
-        int n;                // количество элементов массива
-        double[] array;       // исходный массив
+        int n;                  // количество элементов массива
+        double[] array;         // исходный массив
         double max; int maxCounter; int maxIndex;
         double min; int minCounter; int minIndex;
 
         System.out.println("Одномерные массивы. Задача №4");
 
         // Определим количество элементов массива случайным образом от 2 до 10
-        n = (int) (Math.random()*10+2);       // +2 т.к. n не может быть равным нулю и 1 т.к. нужно поменять местами
-        // Создадим и заполним массив значениями от 0 до 9
+        n = (int) (Math.random()*9+2);       // +2 т.к. n не может быть равным нулю и 1 т.к. нужно поменять местами
+        // Создадим и заполним массив значениями в интервале [-10;10]
         array = new double[n];
         for (int i=0; i<n; i++) {
-            array[i] = Math.random()*10;
+            array[i] = Math.random()*11;
             if (Math.random()<0.5) array[i]*=(-1);      // добавим случайным образом в массив отрицательные элементы
         }
         // Выведем массив для наглядности
