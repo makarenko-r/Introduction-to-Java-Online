@@ -1,11 +1,7 @@
-import java.sql.Array;
-
 public class Part1_Task3 {
-
-
     public static void main(String[] args) {
-        int n;          // количество элементов массива
-        double[] array;    // исходный массив
+        int n;                  // количество элементов массива
+        double[] array;         // исходный массив
         int counterPositive;
         int counterNegative;
         int counterZero;
@@ -14,10 +10,10 @@ public class Part1_Task3 {
 
         // Определим количество элементов массива случайным образом от 1 до 1000
         n = (int) (Math.random()*1000+1);       // +1 т.к. n не может быть равным нулю
-        // Создадим и заполним массив значениями от 0 до 99999
+        // Создадим и заполним массив значениями в интервале [-100000;100000]
         array = new double[n];
         for (int i=0; i<n; i++) {
-            array[i] = Math.random()*100000;
+            array[i] = Math.random()*100001;
             if (Math.random()<0.5) array[i]*=(-1);      // добавим случайным образом в массив отрицательные элементы
         }
         // Инициализируем счетчики
