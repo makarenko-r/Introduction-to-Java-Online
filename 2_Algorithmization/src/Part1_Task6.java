@@ -1,10 +1,9 @@
-import java.sql.Array;
 import java.util.Arrays;
 
 public class Part1_Task6 {
     public static void main(String[] args) {
-        int n;              // количество элементов массива
-        double[] array;     // исходный массив
+        int n;                  // количество элементов массива
+        double[] array;         // исходный массив
         double sum;
 
         System.out.println("Одномерные массивы. Задача №6");
@@ -14,7 +13,7 @@ public class Part1_Task6 {
         // Создадим и заполним массив значениями от 0 до 10
         array = new double[n];
         for (int i=0; i<n; i++) {
-            array[i] = Math.random()*10+1;
+            array[i] = Math.random()*11;
             if (Math.random()<0.5) array[i]*=(-1);      // добавим случайным образом в массив отрицательные элементы
         }
         // Выведем массив для наглядности
