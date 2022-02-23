@@ -15,7 +15,7 @@ public class Linear_2 {
                 a = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения b
@@ -27,7 +27,7 @@ public class Linear_2 {
                 b = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения c
@@ -39,7 +39,7 @@ public class Linear_2 {
                 c = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Вычисление значения выражения

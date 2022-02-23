@@ -17,7 +17,7 @@ public class Linear_5 {
                 if (T < 0) throw new Exception();
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
 

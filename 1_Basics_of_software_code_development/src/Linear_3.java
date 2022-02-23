@@ -15,7 +15,7 @@ public class Linear_3 {
                 x = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения y
@@ -27,7 +27,7 @@ public class Linear_3 {
                 y = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Вычисление значения выражения

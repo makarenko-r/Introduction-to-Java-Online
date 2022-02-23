@@ -20,7 +20,7 @@ public class Linear_4 {
                 else if (inputToArray.length == 8 && inputToArray[0] == '-' && R < 1000 && R > -1000) break;    // -
                 else throw new Exception();                     // Выброс исключения на случай несоответствия виду
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Вычисление значения выражения

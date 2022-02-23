@@ -15,7 +15,7 @@ public class Linear_6 {
                 x = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения y
@@ -27,10 +27,11 @@ public class Linear_6 {
                 y = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // true или false - проверка на попадание в область
+        // изначально output = false
         if (y <= 4 && y >= -3) {
             if (y > 0 && x <= 2 && x >= -2) output = true;
             if (y <= 0 && x <= 4 && x >= -4) output = true;
