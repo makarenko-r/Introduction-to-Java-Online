@@ -16,7 +16,7 @@ public class Cycles_4 {
                 x = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения шага изменения
@@ -28,7 +28,7 @@ public class Cycles_4 {
                 h = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Вычисление значения произведения квадратов первых 200 чисел начиная с x с шагом изменения h

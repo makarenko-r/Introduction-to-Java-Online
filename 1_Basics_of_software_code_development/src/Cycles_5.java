@@ -16,16 +16,18 @@ public class Cycles_5 {
                 if (e<=0) throw new Exception();
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
 
         // Вычисление значения суммы тех членов ряда, модуль которых больше или равен заданному e
+        output = 0; // инициализация суммы
         n = 1;
         a_n = 1/(Math.pow(2,n))+1/(Math.pow(3,n));
         while (e<a_n) {
-            System.out.println(a_n);                    // Вывод результата на экран
+            output+=a_n;
             n++;
+            System.out.println("Следующий член ряда, удовлетворящий условиям - "+a_n+", сумма членов ряда равна: "+output+"."); // Вывод результата
             a_n = 1/(Math.pow(2,n))+1/(Math.pow(3,n));
         }
     }

@@ -16,7 +16,7 @@ public class Cycles_7 {
                 if (m <= 0) throw new Exception();      // натуральное число больше 0
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неподобающее значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения n
@@ -29,7 +29,7 @@ public class Cycles_7 {
                 if (n <= m) throw new Exception(); // [m,n] - n - по определению не может быть меньше либо равно m
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неподобающее значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Вывод делителей числа кроме единицы и самого числа

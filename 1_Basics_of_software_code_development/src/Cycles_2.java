@@ -1,5 +1,4 @@
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Cycles_2 {
@@ -24,7 +23,7 @@ public class Cycles_2 {
                 A = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения B
@@ -44,7 +43,7 @@ public class Cycles_2 {
                 }
                 else throw new Exception();     // Выброс исключения если B<=A
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения h
@@ -62,7 +61,7 @@ public class Cycles_2 {
                 if (round_precision<numbers_after_dot) round_precision = numbers_after_dot; // переопределение точности
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Определение точности
