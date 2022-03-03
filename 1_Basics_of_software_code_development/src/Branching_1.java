@@ -16,7 +16,7 @@ public class Branching_1 {
                 if (angle_1 <= 0 || angle_1 >= 180) throw new Exception();
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения angle_2
@@ -29,16 +29,19 @@ public class Branching_1 {
                 if (angle_2 <= 0 || angle_2 >= 180) throw new Exception();
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Вычисление значения третьего угла
         angle_3 = 180 - angle_1 - angle_2;
         // Расчет: существует треугольник или нет
 
-        if ((angle_1+angle_2) < 180 && (angle_1+angle_3) < 180 && (angle_2+angle_3) < 180) {
+        if (angle_3 > 0 && angle_3 < 180) {
             output = "Да, существует.";
-            if (angle_1 == 90 || angle_2 == 90 || angle_3 == 90) output+=" Это прямоугольный треугольник.";
+            if (angle_1 == 90 || angle_2 == 90 || angle_3 == 90) {
+                output+=" Это прямоугольный треугольник.";
+                if (angle_1 == angle_2 || angle_1 == angle_3 || angle_2 == angle_3) output+=" Также этот треугольник является равнобедренным.";
+            }
             else if (angle_1 > 90 || angle_2 > 90 || angle_3 > 90) {
                 output+=" Это тупоугольный треугольник с тупым углом " + Math.max(Math.max(angle_1,angle_2),angle_3) + " градусов.";
                 if (angle_1 == angle_2 || angle_1 == angle_3 || angle_2 == angle_3) output+=" Также этот треугольник является равнобедренным.";
@@ -48,6 +51,7 @@ public class Branching_1 {
             else output+=" Это остроугольный треугольник.";
         }
         // Вывод результата
+        // Изначально output = "Нет, не существует."
         System.out.println("Существует ли треугольник? " + output);
     }
 }

@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 public class Branching_4 {
 
     public static void main(String[] args) {
-        double A, B, x, y, z; String output;
+        double A, B, x, y, z; String output = "Нет, кирпич не пройдет через отверстие.";;
         System.out.println("Ветвление. Задача №4.");
         // Ввод значения A
         while (true) {
@@ -15,7 +15,7 @@ public class Branching_4 {
                 A = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения B
@@ -27,7 +27,7 @@ public class Branching_4 {
                 B = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения x
@@ -39,7 +39,7 @@ public class Branching_4 {
                 x = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения y
@@ -51,7 +51,7 @@ public class Branching_4 {
                 y = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения z
@@ -63,14 +63,14 @@ public class Branching_4 {
                 z = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Пройдет ли кирпич через отверстие?
+        // Изначально output = "Нет, кирпич не пройдет через отверстие."
         if (A >= x && (B >= y || B >= z)) output = "Да, пройдет.";
         else if (A >= y && (B >= x || B >= z)) output = "Да, пройдет.";
         else if (A >= z && (B >= x || B >= y)) output = "Да, пройдет.";
-        else output = "Нет, кирпич не пройдет через отверстие.";
         System.out.println("Пройдет ли кирпич через отверстие? " + output);
     }
 }

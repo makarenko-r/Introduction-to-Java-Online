@@ -15,7 +15,7 @@ public class Branching_2 {
                 a = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения b
@@ -27,7 +27,7 @@ public class Branching_2 {
                 b = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения c
@@ -39,7 +39,7 @@ public class Branching_2 {
                 c = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения d
@@ -51,7 +51,7 @@ public class Branching_2 {
                 d = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Вычисление значения max{min(a,b), min(c,d)}
@@ -67,5 +67,4 @@ public class Branching_2 {
         if (a < b) return a;
         else return b;
     }
-
 }

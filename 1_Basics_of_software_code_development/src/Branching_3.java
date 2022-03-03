@@ -15,7 +15,7 @@ public class Branching_3 {
                 x1 = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения y1
@@ -27,7 +27,7 @@ public class Branching_3 {
                 y1 = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения x2
@@ -39,7 +39,7 @@ public class Branching_3 {
                 x2 = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения y2
@@ -51,7 +51,7 @@ public class Branching_3 {
                 y2 = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения x3
@@ -63,7 +63,7 @@ public class Branching_3 {
                 x3 = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Ввод значения y3
@@ -75,15 +75,18 @@ public class Branching_3 {
                 y3 = Double.parseDouble(input);
                 break;
             } catch (Exception ex) {
-                System.out.println("Вы ввели неверное значение. Повторите ввод.");
+                System.out.println("Вы ввели некорректное значение. Повторите ввод.");
             }
         }
         // Определяем лежат ли три точки на одной прямой
+        // Изначально output = "Нет, не лежат."
         // Любые две точки могут образовать прямую
         // Уравнение прямой y=kx+b              // y1=kx1+b -> y2=kx2+b -> y1-y2=kx1+b-kx2-b ->
         double k = (y1-y2)/(x1-x2);             // -> y1-y2=k(x1-x2) -> k=(y1-y2)/(x1-x2)
         double b = y1-k*x1;                     // y1=kx1+b -> b=y1-kx1
-        if (y3 == (k*x3+b)) output = "Да, все три точки лежат на одной прямой. Уравнение прямой: y=" + k + "x+" + b + ".";
+        // Введём переменную epsilon для установления приемлемой точности вычисления в связи со сравнением типа double
+        double epsilon = 0.000001;
+        if (Math.abs(y3-k*x3+b)<epsilon) output = "Да, все три точки лежат на одной прямой. Уравнение прямой: y=" + k + "x+" + b + ".";
         System.out.println("Лежат ли три точки на одной прямой? " + output);
     }
 }
