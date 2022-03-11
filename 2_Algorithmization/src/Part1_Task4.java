@@ -11,14 +11,14 @@ public class Part1_Task4 {
 
         // Определим количество элементов массива случайным образом от 2 до 10
         n = (int) (Math.random()*9+2);       // +2 т.к. n не может быть равным нулю и 1 т.к. нужно поменять местами
-        // Создадим и заполним массив значениями в интервале [-10;10]
+        // Создадим и заполним массив значениями в интервале (-10;10)
         array = new double[n];
         for (int i=0; i<n; i++) {
-            array[i] = Math.random()*11;
+            array[i] = Math.random()*10;
             if (Math.random()<0.5) array[i]*=(-1);      // добавим случайным образом в массив отрицательные элементы
         }
         // Выведем массив для наглядности
-        System.out.println("Массив создан");
+        System.out.println("Создан массив действительных чисел в интервале (-10;10) с числом элементов от 2 до 10.");
         System.out.println(Arrays.toString(array));
         // Инициализируем переменные, хранящие max и min значения массива + счетчики повторений + номер позиции
         max = array[0];     maxCounter = 0;     maxIndex = 0;
@@ -40,8 +40,8 @@ public class Part1_Task4 {
             if (array[i]<=min) minCounter++;
         }
         System.out.println("Выполним проверку:");
-        System.out.println("max=" + max + " maxIndex="+maxIndex + " maxCounter=" + maxCounter); // for check
-        System.out.println("min=" + min+" minIndex=" + minIndex + " minCounter" + minCounter);  // for check
+        System.out.println("max = " + max + " maxIndex = " + maxIndex + " maxCounter = " + maxCounter); // for check
+        System.out.println("min = " + min + " minIndex = " + minIndex + " minCounter = " + minCounter); // for check
         // Поменяем местами наибольший и наименьший элементы
         if ((maxCounter==1)&&(minCounter==1)) {
             array[minIndex] = max;
