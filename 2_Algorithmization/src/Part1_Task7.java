@@ -7,7 +7,7 @@ public class Part1_Task7 {
         double[] arrayHelp;     // дополнительный массив
         double max;
 
-        System.out.println("Одномерные массивы. Задача №67");
+        System.out.println("Одномерные массивы. Задача №7");
 
         // Определим количество элементов массива случайным образом от 10 до 20
         n = (int) (Math.random()*11+10);
